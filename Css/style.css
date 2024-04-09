@@ -1,0 +1,197 @@
+/* #198754 */
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Tajawal", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+*{
+    padding:0 ;
+    margin: 0;
+
+}
+i{
+    cursor: pointer;
+}
+.Bar-link{
+    position: sticky;
+    top: 0;
+}
+.MENU{
+    display: none;
+}
+.MENU .close{
+    display: none;
+}
+ 
+a{
+    text-decoration: none;
+}
+.Major_bar .box{
+    width: max-content;
+    transition: 0.5s;
+}
+nav .CLOSE{
+    display: none;
+}
+
+.Major_bar .box:hover{
+   background-color: #ccc !important;
+   transform: translateX(15px);
+}
+.Major_bar .box a,.Major_bar .MAIN_BAR a{
+    color: black !important;
+    transition: 0.5s;
+}
+.Major_bar .box a:hover,.Major_bar .MAIN_BAR a:hover{
+    color:#198754 !important ;
+}
+.ss .box .up{
+    display: none;
+}
+.ss .box{
+    width: 90%;
+    border-radius: 5px;
+}
+.MENU_BAR {
+    display: none;
+}
+.MENU_BAR a{
+  display: block;
+  width: max-content;
+  transition: 0.5s;
+
+}
+.sun{
+    animation: sun infinite 2s;
+}
+@keyframes sun {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.MENU_BAR a:hover{
+    background-color: #ccc;
+}
+/* Start Nav Bar */
+.Nav-Righ img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.Nav-Righ .sun{
+    display: none;
+}
+/* End Nav Bar */
+/* Start Partfilo */
+.protofile{
+    right: 10px;
+    top: 90px;
+    background-color: #eee;
+}
+.u ,.s{
+    transition: 0.5s;
+    background-color: #eee;
+    cursor: pointer;
+}
+.u:hover ,.s:hover{
+    background-color: #ccc;
+}
+.protofile{
+    display: none;
+}
+.chart{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.dark .Bar-link{
+    background-color: rgb(23, 22, 22);
+}
+.dark .Major_bar a{
+   color: white !important;
+}
+.dark .chart{
+    background-color: rgb(36, 31, 31);
+}
+.dark .protofile{
+    background-color: rgb(22, 20, 20);
+}
+.dark .u ,.dark .s{
+    transition: 0.5s;
+    background-color: rgb(22, 20, 20);
+    cursor: pointer;
+}
+.dark .u:hover ,.dark .s:hover{
+    background-color: #ccc;
+}
+/* End Partfilo */
+/*  Start Media Mobil */
+@media screen and (max-width : 480px){
+    .MENU{
+        display: block;
+    }
+    .Master{
+        text-align: start !important;
+    }
+    .Major_bar{
+        display: none;
+    }
+    nav{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .protofile{
+        top:70px;
+        right: 4px;
+    }
+   
+}
+@media screen and (min-width : 481px) and (max-width : 770px){
+    .MENU{
+        display: block;
+    }
+    .Master{
+        text-align: start !important;
+    }
+    .Major_bar{
+        display: none;
+    }
+    nav{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .protofile{
+        top:70px;
+        right: 4px;
+    }
+}
+@media screen and (min-width : 771px) and (max-width : 1100px){
+
+     .MENU{
+        display: block;
+    }
+    .Master{
+        text-align: start !important;
+    }
+    .Major_bar{
+        display: none;
+    } 
+    nav{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .protofile{
+        top:70px;
+        right: 20px;
+    }
+}
+/*  End Media  */
